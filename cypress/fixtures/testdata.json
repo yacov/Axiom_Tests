@@ -1,0 +1,17 @@
+{
+  "loginData": {
+    "email": "qa@axiom.com",
+    "password": "hvL8z5UhcQ_8683w"
+  },
+  "mandatoryFields": {
+    "platform": "PostgreSQL",
+    "requestAccessFor": "qa@axiom.com",
+    "server": "PostgreSQL Integration",
+    "database": "postgres",
+    "role": "Read only",
+    "durationType": "Hours",
+    "durationPeriod": "4",
+    "justification": "Test justification",
+    "requestName": "Read Only"
+  }
+}
