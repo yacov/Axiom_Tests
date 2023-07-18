@@ -9,18 +9,19 @@
   "dropdown": {
     "platform": "[data-cy='platform']",
     "assigneeFilter": "[data-cy='assignee-filter'] .filter-header",
-    "nameFilter": "[data-cy='name-filter']",
-    "databaseSelector": "[data-cy='database-selector'] [data-cy='open-dropdown-icon']"
+    "nameFilter": "#primaryField",
+    "databaseSelector": "#secondaryField",
+    "role": "#role"
   },
   "searchFilter": ".search-filter",
-  "role": "[data-cy='role']",
+
   "durationType": "[data-cy='duration-type']",
-  "durationPeriod": "[data-cy='duration-period']",
+  "durationPeriod": "input[type='number']",
   "justifications": "[data-cy='justifications']",
-  "requestName": "[data-cy='request-name']",
+  "requestName": "input[data-cy='title']",
   "reviewRequestButton": "[data-cy='review-request-button']",
   "creationFormModal": "[data-cy='creation-form-modal']",
-  "submitRequestButton": "[data-cy='submit-button']",
+  "submitRequestButton": "button",
   "confirmationMessage": "Just a second, we are on it...",
   "tableRow": "[data-cy='table-row']"
 }

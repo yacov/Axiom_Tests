@@ -1,9 +1,11 @@
+/// <reference types="cypress" />
 Cypress.Commands.add('login', (selectors, credentials) => {
     cy.visit('/');
     cy.get(selectors.email).clear().type(credentials.email);
     cy.get(selectors.password).clear().type(credentials.password);
     cy.get(selectors.submitButton).click();
 });
+
 
 Cypress.Commands.add('verifyUserIsLoggedIn', () => {
     cy.contains('Dashboard', {timeout: 10000}).should('be.visible');
@@ -21,9 +23,9 @@ Cypress.Commands.add('requestData', (key) => {
 });
 
 Cypress.Commands.add('selectDropdown', (selector, option) => {
-    cy.get(selector).click();
-    cy.get('.search-filter').type(option);
-    cy.contains('[data-cy="filter-item"]', option).click();
+    cy.get(selector,{timeout: 10000}).click();
+    //cy.get('.search-filter').type(option);
+    cy.contains(option).click();
 });
 
 Cypress.Commands.add('selectRole', (role, selector) => {
@@ -31,10 +33,10 @@ Cypress.Commands.add('selectRole', (role, selector) => {
 });
 
 Cypress.Commands.add('selectDurationTypeAndPeriod', (durationType, durationPeriod, durationTypeSelector, durationPeriodSelector) => {
-    cy.get(durationTypeSelector).click();
-    cy.contains(durationType).click({force: true});
-    cy.get(durationPeriodSelector).click();
-    cy.contains(durationPeriod).click({force: true});
+    //cy.get(durationTypeSelector).click();
+    cy.contains('button', durationType).click({force: true});
+    cy.get(durationPeriodSelector).clear().type(durationPeriod);
+   // cy.contains(durationPeriod).click({force: true});
 });
 
 Cypress.Commands.add('verifyModalContent', (expectedContent, modalSelector) => {
