@@ -11,5 +11,6 @@ declare namespace Cypress
         verifyModalContent(expectedContent: any, modalSelector: string): Chainable<any>;
         verifyCreateRequest(confirmationMessageSelector: string): Chainable<any>;
         verifyTableRowContent(expectedContent: any): Chainable<any>;
+        fillForWhat(expectedContent: any): Chainable<any>;
     }
 }

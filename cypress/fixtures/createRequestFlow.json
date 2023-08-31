@@ -1,0 +1,39 @@
+{
+  "Postgres": [
+    "primaryFilter",
+    "secondaryFilter",
+    "role"
+  ],
+  "MySQL": [
+    "primaryFilter",
+    "secondaryFilter",
+    "role"
+  ],
+  "Okta": [
+    "role"
+  ],
+  "GCP": [
+    "resource",
+    "role"
+  ],
+  "AWS": [
+    "account",
+    "role"
+  ],
+  "Jumpcloud": [
+    "account",
+    "permissions"
+  ],
+  "Google Workspace": [
+    "role"
+  ],
+  "GitHub": [
+    "primaryFilter",
+    "secondaryFilter"
+  ],
+  "MongoDB": [
+    "primaryFilter",
+    "secondaryFilter",
+    "role"
+  ]
+}

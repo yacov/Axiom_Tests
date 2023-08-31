@@ -8,13 +8,17 @@
   "newRequestButton": "Create New Request",
   "dropdown": {
     "platform": "[data-cy='platform']",
-    "assigneeFilter": "[data-cy='assignee-filter'] .filter-header",
-    "nameFilter": "#primaryField",
-    "databaseSelector": "#secondaryField",
-    "role": "#role"
+    "account": "[data-cy*='account']",
+    "assigneeFilter": "[data-cy='assignee-filter']",
+    "forWhoFilter": "[data-cy='addressee-filter']",
+    "primaryFilter": "#primaryField",
+    "secondaryFilter": "#secondaryField",
+    "role": "[data-cy='role-filter']",
+    "permissions": "[data-cy='permissions-filter']",
+    "resource": "[data-cy='resource-filter']"
+
   },
   "searchFilter": ".search-filter",
-
   "durationType": "[data-cy='duration-type']",
   "durationPeriod": "input[type='number']",
   "justifications": "[data-cy='justifications']",

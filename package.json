@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "cypress": "^12.17.1"
+    "cy-spok": "^1.6.2",
+    "cypress": "^13.0.0"
   },
   "dependencies": {
     "universal-ctags": "^0.0.1"
