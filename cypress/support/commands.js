@@ -28,23 +28,23 @@ Cypress.Commands.add('mockUserInfo', () => {
     }).as('Auth0 User Info');
 });
 Cypress.Commands.add('loginSession', (user) => {
-  cy.session(
-    'axiom_login',
-    () => {
-      cy.mockUserInfo();
-      cy.visit('/');
-      cy.get('#1-email').type(user ? user.email : 'fe-tests@axiom.com');
-      cy.get('#1-password').type(user ? user.password : 'hvL8z5UhcQ_8683w');
-      cy.get('#1-submit').click();
-      cy.url().should('satisfy', (url) => {
-        return !url.includes('/login');
-      });
-      cy.getLocalStorage('access_token').should('not.be.undefined');
-    },
-    {
-      cacheAcrossSpecs: true,
-    }
-  );
+    cy.session(
+        'axiom_login',
+        () => {
+            cy.mockUserInfo();
+            cy.visit('/');
+            cy.get('#1-email').type(user ? user.email : 'fe-tests@axiom.com');
+            cy.get('#1-password').type(user ? user.password : 'hvL8z5UhcQ_8683w');
+            cy.get('#1-submit').click();
+            cy.url().should('satisfy', (url) => {
+                return !url.includes('/login');
+            });
+            cy.getLocalStorage('access_token').should('not.be.undefined');
+        },
+        {
+            cacheAcrossSpecs: true,
+        }
+    );
 });
 
 Cypress.Commands.add('verifyUserIsLoggedIn', () => {
@@ -63,10 +63,12 @@ Cypress.Commands.add('requestData', (key) => {
 });
 
 Cypress.Commands.add('selectDropdown', (selector, option) => {
-    cy.get(selector,{timeout: 15000}).then(($el) => {
+    cy.get(selector, {timeout: 15000}).then(($el) => {
         cy.wrap($el).wait(2000).click().within(() => {
-            cy.get('[type="checkbox"]').if().each((checkbox) => {cy.wrap(checkbox).uncheck({force: true})});
-	    cy.contains(option).click({force: true});
+            cy.get('[type="checkbox"]').if().each((checkbox) => {
+                cy.wrap(checkbox).uncheck({force: true})
+            });
+            cy.contains(option).click({force: true});
         });
     });
 });
@@ -74,13 +76,13 @@ Cypress.Commands.add('selectDropdown', (selector, option) => {
 Cypress.Commands.add('fillForWhat', (data, integration) => {
 
     flow[integration].forEach(elem => {
-       cy.selectDropdown(selectors["dropdown"][elem], data[elem])
-   });
+        cy.selectDropdown(selectors["dropdown"][elem], data[elem])
+    });
 
 });
 Cypress.Commands.add('fillForWho', (data) => {
-       cy.selectDropdown(selectors["dropdown"]["forWhoFilter"], data["requestAccessFor"]);
-   });
+    cy.selectDropdown(selectors["dropdown"]["forWhoFilter"], data["requestAccessFor"]);
+});
 Cypress.Commands.add('selectRole', (role, selector) => {
     cy.contains(selector, role).click().should('have.class', 'selected-role');
 });
@@ -89,7 +91,7 @@ Cypress.Commands.add('fillForHowLong', (data) => {
     //cy.get(durationTypeSelector).click();
     cy.contains('button', data.durationType).click({force: true});
     cy.get(selectors.durationPeriod).clear().type(data.durationPeriod);
-   // cy.contains(durationPeriod).click({force: true});
+    // cy.contains(durationPeriod).click({force: true});
 });
 Cypress.Commands.add('fillWhatFor', (data) => {
 
