@@ -1,138 +1,116 @@
 {
-  "loginData": {
-    "email": "qa.automation@axiomsecurity.app",
-    "password": "mcDhJPv49NjupwJicDMgLCCfoMwQPRWb"
-  },
   "Postgres": {
-    "mandatoryFields": {
-      "platform": "PostgreSQL",
-      "requestAccessFor": "qa@axiom.com",
-      "primaryFilter": "Sandbox Postgres",
-      "secondaryFilter": "postgres",
-      "role": "Read only",
-      "durationType": "Hours",
-      "durationPeriod": "4",
-      "justification": "Test justification",
-      "requestName": "Read Only",
-      "revokeReason": "Test revoke reason",
-      "denyReason": "Test deny reason"
-    }
+    "platform": "PostgreSQL",
+    "requestAccessFor": "qa@axiom.com",
+    "primaryFilter": "Sandbox Postgres",
+    "secondaryFilter": "postgres",
+    "role": "Read only",
+    "durationType": "Hours",
+    "durationPeriod": "4",
+    "justification": "Test justification",
+    "requestName": "Read Only",
+    "revokeReason": "Test revoke reason",
+    "denyReason": "Test deny reason"
   },
   "MongoDB": {
-    "mandatoryFields": {
-      "platform": "MongoDB Atlas",
-      "requestAccessFor": "qa@axiom.com",
-      "primaryFilter": "Project 0",
-      "secondaryFilter": "production",
-      "role": "Read only",
-      "durationType": "Hours",
-      "durationPeriod": "4",
-      "justification": "Test justification",
-      "requestName": "Read Only",
-      "revokeReason": "Test revoke reason",
-      "denyReason": "Test deny reason"
-    }
+    "platform": "MongoDB Atlas",
+    "requestAccessFor": "qa@axiom.com",
+    "primaryFilter": "Project 0",
+    "secondaryFilter": "production",
+    "role": "Read only",
+    "durationType": "Hours",
+    "durationPeriod": "4",
+    "justification": "Test justification",
+    "requestName": "Read Only",
+    "revokeReason": "Test revoke reason",
+    "denyReason": "Test deny reason"
   },
   "Okta": {
-    "mandatoryFields": {
-      "platform": "Okta",
-      "requestAccessFor": "qa@axiom.com",
-      "secondaryFilter": "postgres",
-      "role": "Group Administrator",
-      "durationType": "Hours",
-      "durationPeriod": "4",
-      "justification": "Test justification",
-      "requestName": "Read Only",
-      "revokeReason": "Test revoke reason",
-      "denyReason": "Test deny reason"
-    }
+    "platform": "Okta",
+    "requestAccessFor": "qa@axiom.com",
+    "secondaryFilter": "postgres",
+    "role": "Group Administrator",
+    "durationType": "Hours",
+    "durationPeriod": "4",
+    "justification": "Test justification",
+    "requestName": "Read Only",
+    "revokeReason": "Test revoke reason",
+    "denyReason": "Test deny reason"
   },
   "GitHub": {
-    "mandatoryFields": {
-      "platform": "GitHub",
-      "requestAccessFor": "qa@axiom.com",
-      "primaryFilter": "Axiom-Integration-Test",
-      "secondaryFilter": "Test Team",
-      "durationType": "Hours",
-      "durationPeriod": "4",
-      "justification": "Test justification",
-      "requestName": "Read Only",
-      "revokeReason": "Test revoke reason",
-      "denyReason": "Test deny reason"
-    }
+    "platform": "GitHub",
+    "requestAccessFor": "qa@axiom.com",
+    "primaryFilter": "Axiom-Integration-Test",
+    "secondaryFilter": "Test Team",
+    "durationType": "Hours",
+    "durationPeriod": "4",
+    "justification": "Test justification",
+    "requestName": "Read Only",
+    "revokeReason": "Test revoke reason",
+    "denyReason": "Test deny reason"
   },
   "MySQL": {
-    "mandatoryFields": {
-      "platform": "MySQL",
-      "requestAccessFor": "qa@axiom.com",
-      "primaryFilter": "Sandbox MySQL",
-      "secondaryFilter": "testdb",
-      "role": "Read only",
-      "durationType": "Hours",
-      "durationPeriod": "4",
-      "justification": "Test justification",
-      "requestName": "Read Only",
-      "revokeReason": "Test revoke reason",
-      "denyReason": "Test deny reason"
-    }
+    "platform": "MySQL",
+    "requestAccessFor": "qa@axiom.com",
+    "primaryFilter": "Sandbox MySQL",
+    "secondaryFilter": "testdb",
+    "role": "Read only",
+    "durationType": "Hours",
+    "durationPeriod": "4",
+    "justification": "Test justification",
+    "requestName": "Read Only",
+    "revokeReason": "Test revoke reason",
+    "denyReason": "Test deny reason"
   },
   "GCP": {
-    "mandatoryFields": {
-      "platform": "GCP",
-      "requestAccessFor": "qa@axiom.com",
-      "resource": "Axiom test app",
-      "role": "Actions Admin",
-      "durationType": "Hours",
-      "durationPeriod": "4",
-      "justification": "Test justification",
-      "requestName": "Read Only",
-      "revokeReason": "Test revoke reason",
-      "denyReason": "Test deny reason"
-    }
+    "platform": "GCP",
+    "requestAccessFor": "qa@axiom.com",
+    "resource": "Axiom test app",
+    "role": "Actions Admin",
+    "durationType": "Hours",
+    "durationPeriod": "4",
+    "justification": "Test justification",
+    "requestName": "Read Only",
+    "revokeReason": "Test revoke reason",
+    "denyReason": "Test deny reason"
   },
   "AWS": {
-    "mandatoryFields": {
-      "platform": "AWS",
-      "requestAccessFor": "qa@axiom.com",
-      "resource": "Axiom test app",
-      "account": "Sandbox test tenant",
-      "role": "AdministratorAccess",
-      "durationType": "Hours",
-      "durationPeriod": "4",
-      "justification": "Test justification",
-      "requestName": "Read Only",
-      "revokeReason": "Test revoke reason",
-      "denyReason": "Test deny reason"
-    }
+    "platform": "AWS",
+    "requestAccessFor": "qa@axiom.com",
+    "resource": "Axiom test app",
+    "account": "Sandbox test tenant",
+    "role": "AdministratorAccess",
+    "durationType": "Hours",
+    "durationPeriod": "4",
+    "justification": "Test justification",
+    "requestName": "Read Only",
+    "revokeReason": "Test revoke reason",
+    "denyReason": "Test deny reason"
   },
   "Jumpcloud": {
-    "mandatoryFields": {
-      "platform": "Jumpcloud",
-      "requestAccessFor": "qa@axiom.com",
-      "resource": "Axiom test app",
-      "account": "Jumpcloud integration",
-      "permissions": "AdministratorAccess",
-      "durationType": "Hours",
-      "durationPeriod": "4",
-      "justification": "Test justification",
-      "requestName": "Read Only",
-      "revokeReason": "Test revoke reason",
-      "denyReason": "Test deny reason"
-    }
+    "platform": "Jumpcloud",
+    "requestAccessFor": "qa@axiom.com",
+    "resource": "Axiom test app",
+    "account": "Jumpcloud integration",
+    "permissions": "AdministratorAccess",
+    "durationType": "Hours",
+    "durationPeriod": "4",
+    "justification": "Test justification",
+    "requestName": "Read Only",
+    "revokeReason": "Test revoke reason",
+    "denyReason": "Test deny reason"
   },
   "Google Workspaces": {
-    "mandatoryFields": {
-      "platform": "Google Workspaces",
-      "requestAccessFor": "qa@axiom.com",
-      "resource": "Axiom test app",
-      "account": "Sandbox test tenant",
-      "role": "E2E Group",
-      "durationType": "Hours",
-      "durationPeriod": "4",
-      "justification": "Test justification",
-      "requestName": "Read Only",
-      "revokeReason": "Test revoke reason",
-      "denyReason": "Test deny reason"
-    }
+    "platform": "Google Workspaces",
+    "requestAccessFor": "qa@axiom.com",
+    "resource": "Axiom test app",
+    "account": "Sandbox test tenant",
+    "role": "E2E Group",
+    "durationType": "Hours",
+    "durationPeriod": "4",
+    "justification": "Test justification",
+    "requestName": "Read Only",
+    "revokeReason": "Test revoke reason",
+    "denyReason": "Test deny reason"
   }
 }

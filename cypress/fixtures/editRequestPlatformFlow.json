@@ -1,0 +1,11 @@
+{
+    "postgres": ["platform", "primaryFilter", "secondaryFilter"],
+    "mysql": ["platform", "primaryFilter", "secondaryFilter", "role"],
+    "mongodb": ["platform", "primaryFilter", "secondaryFilter", "role"],
+    "okta": ["platform", "role"],
+    "gcp": ["platform","resource", "role"],
+    "aws": ["platform", "account", "role"],
+    "jumpcloud": ["platform", "account", "permissions"],
+    "googleWorkspace": ["platform", "role"],
+    "github": ["platform", "primaryFilter", "secondaryFilter"]
+}

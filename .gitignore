@@ -1,1 +1,13 @@
 /node_modules/
+package-lock.json
+.aider.chat.history.md
+.aider.config.yml
+.aider.config.yml.bak
+.env.bak
+all
+commands
+file
+in
+list
+cypress/support/customCommands.d.ts
+

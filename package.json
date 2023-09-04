@@ -1,7 +1,8 @@
 {
   "devDependencies": {
     "cy-spok": "^1.6.2",
-    "cypress": "^13.0.0"
+    "cypress": "^13.1.0",
+    "cypress-if": "^1.10.5"
   },
   "dependencies": {
     "universal-ctags": "^0.0.1"
